@@ -1,4 +1,3 @@
-# reflexion-agent/reflexion_main.py
 from dotenv import load_dotenv
 import os
 
@@ -44,7 +43,7 @@ if __name__ == "__main__":
     print("Hello Reflexion")
 
     print(graph.get_graph().draw_mermaid())
-    output_png_path = os.path.join("reflexion-agent", "reflexion-graph.png")
+    output_png_path = os.path.join("reflexion-graph.png")
     graph.get_graph().draw_mermaid_png(output_file_path=output_png_path)
 
     res = graph.invoke(
